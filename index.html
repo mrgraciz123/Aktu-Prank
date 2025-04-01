@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTU Phase 2 Result 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        input {
+            padding: 10px;
+            width: 80%;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .result {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AKTU Phase 2 Result 2025</h1>
+        <p>Enter your Roll Number to check your result:</p>
+        <input type="text" id="rollNumber" placeholder="Enter Roll Number">
+        <br>
+        <button onclick="showResult()">Check Result</button>
+        <p class="result" id="resultText"></p>
+    </div>
+
+    <script>
+        function showResult() {
+            var rollNumber = document.getElementById("rollNumber").value;
+            var resultText = document.getElementById("resultText");
+
+            if (rollNumber.trim() === "") {
+                resultText.innerHTML = "Please enter a valid Roll Number!";
+                resultText.style.color = "red";
+            } else {
+                resultText.innerHTML = "🎉 April Fool! There is no result 😂";
+                resultText.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
